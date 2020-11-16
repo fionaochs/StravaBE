@@ -2,13 +2,13 @@ CREATE TABLE IF NOT EXIST ratings (
   id serial PRIMARY KEY,
   athletes_id INT REFERENCES athletes (id),
   shoes_id INT REFERENCES shoes (id),
-  stars FLOAT
+  stgars FLOAT
 )
 CREATE TABLE IF NOT EXIST athletes (
   id serial PRIMARY KEY,
   name TEXT,
   weekly_mileage INT
-)
+)gg
 CREATE TABLE IF NOT EXIST shoes (
   id serial PRIMARY KEY,
   terrain TEXT,
