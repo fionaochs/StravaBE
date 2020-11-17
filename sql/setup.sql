@@ -17,3 +17,6 @@
 --   durable_miles INT
 -- )
 
+-- INSERT INTO shoes values (3, 'road', 'Nike Zoom', 250);
+-- INSERT INTO shoes ();
+

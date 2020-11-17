@@ -7,4 +7,5 @@ describe('StravaBE routes', () => {
   beforeEach(() => {
     return pool.query(fs.readFileSync('./sql/setup.sql', 'utf-8'))
   });
+  it('app test',() => {});
 });

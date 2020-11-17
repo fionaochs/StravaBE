@@ -40,4 +40,15 @@ describe('ratings routes', () => {
         expect(res.body).toEqual(expect.arrayContaining(ratings));
       });
   });
+
+  // it('gets average shoe rating by id via GET', async() => {
+  //   const rec = await Rating.insert({ athletes_id: 1, shoes_id: 1, stars: 1 });
+  //   let shoes_id = 3;
+  //   const response = await request(app)
+  //     .get(`/avgrating/${shoes_id}`);
+  
+  //   expect(response.body).toEqual({
+  //     avg_stars: expect.any(Number)
+  //   });
+  // });
 });
