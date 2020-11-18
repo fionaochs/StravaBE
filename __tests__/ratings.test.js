@@ -1,12 +1,12 @@
 const fs = require('fs');
-const pool = require('../lib/utils/pool');
+const testPool = require('../lib/utils/testPool');
 const request = require('supertest');
 const app = require('../lib/app');
 const Rating = require('../lib/models/rating');
 
 describe('ratings routes', () => {
-  beforeEach(() => {
-    return pool.query(fs.readFileSync('./sql/setup.sql', 'utf-8'));
+  beforeAll(() => {
+    return testPool.query(fs.readFileSync('./sql/setup.sql', 'utf-8'));
   });
 
   it('creates a rating VIA POST', () => {
