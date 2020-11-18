@@ -1,5 +1,5 @@
 -- CREATE TABLE IF NOT EXISTS ratings (
---   id INTEGER PRIMARY KEY NOT NULL,
+--   id INTEGER NOT NULL IDENTITY PRIMARY KEY,
 --   athletes_id INT REFERENCES athletes (id),
 --   shoes_id INT REFERENCES shoes (id),
 --   stars FLOAT
@@ -19,13 +19,13 @@
 
 -- id, model, terrain, avg_rating, durable_miles
 -- CREATE TABLE shoes (id int, model text, terrain text, avg_rating float, durable_miles int);
-INSERT INTO shoes values (1, 'Nike Zoom', 'road', 300);
-INSERT INTO shoes values (2, 'Altra Lone Peak', 'trail', 350);
-INSERT INTO shoes values (3, 'Brooks Ghost','road', 250);
-INSERT INTO shoes values (4, 'Salomon Supercross','trail', 400);
-INSERT INTO shoes values (5, 'Brooks Cascadia','trail', 350);
-INSERT INTO shoes values (6, 'Salomon Ultra Pro','trail', 450);
-INSERT INTO shoes values (7, 'Nike Pegasus','road', 300);
+-- INSERT INTO shoes values (1, 'road', 'Nike Zoom', 300);
+-- INSERT INTO shoes values (2,  'trail', 'Altra Lone Peak', 350);
+-- INSERT INTO shoes values (3, 'road', 'Brooks Ghost', 250);
+-- INSERT INTO shoes values (4, 'trail', 'Salomon Supercross', 400);
+-- INSERT INTO shoes values (5, 'trail', 'Brooks Cascadia', 350);
+-- INSERT INTO shoes values (6, 'trail', 'Salomon Ultra Pro', 450);
+-- INSERT INTO shoes values (7, 'road', 'Nike Pegasus', 300);
 
 
 -- athletes_id, shoes_id, stars
@@ -53,3 +53,4 @@ INSERT INTO shoes values (7, 'Nike Pegasus','road', 300);
 -- INSERT INTO athletes values (1, 'Fiona', 15)
 -- INSERT INTO athletes values (2, 'Spencer', 20)
 -- INSERT INTO athletes values (3, 'Katrina', 10)
+-- INSERT INTO athletes values (4, 'Bodhi', 30)

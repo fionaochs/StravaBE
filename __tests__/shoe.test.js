@@ -10,19 +10,15 @@ describe('shoe routes', () => {
   });
 
   it('finds all shoes via GET', async() => {
-    // const shoes = [{"avg_rating": null, "durable_miles": 300, "id": 1, "model": "Altra Lone Peak", "terrain": "trail"},
-    //     {"avg_rating": null, "durable_miles": 250, "id": 3, "model": "Nike Zoom", "terrain": "road"},
-    //     {"avg_rating": null, "durable_miles": 350, "id": 2, "model": "Brooks Adrenaline", "terrain": "trail"}];
-
     return request(app)
       .get('/shoes')
       .then(res => {
         expect(res.body).toContainEqual({
           "avg_rating": null, 
-          "durable_miles": 350, 
-          "id": 2, 
-          "model": "Brooks Adrenaline", 
-          "terrain": "trail"
+          "durable_miles": 250, 
+          "id": 3, 
+          "model": "Brooks Ghost", 
+          "terrain": "road"
         });
       });
   });
@@ -34,8 +30,8 @@ describe('shoe routes', () => {
   
     expect(response.body).toEqual({
       id: 1,
-      model: 'Altra Lone Peak',
-      terrain: 'trail',
+      model: 'Nike Zoom',
+      terrain: 'road',
       durable_miles: 300,
       avg_rating: null
     });
