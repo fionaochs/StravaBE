@@ -32,8 +32,8 @@
 ## To run locally
   ```npm i ```
   ## To set up the database
-    ### Add DATABASE_URL in .env file
-    ### Add TEST_DB_URL in .env file
+     Add DATABASE_URL in .env file
+     Add TEST_DB_URL in .env file
 
   ### In StravaBE and StravaFE
   ```npm run start```
