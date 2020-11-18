@@ -8,7 +8,6 @@ describe('shoe recommendation routes', () => {
   beforeEach(() => {
     return testPool.query(fs.readFileSync('./sql/setup.sql', 'utf-8'));
   });
-  // afterEach(()=> {})
   it('gets a shoe rec for athlete by id via GET', async() => {
     let athlete_id = 2;
     const response = await request(app)
