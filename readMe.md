@@ -4,7 +4,8 @@
   [StravaApp]('https://strava-technical.netlify.app/')
 
 ## Code at:
-  Github: https://github.com/fionaochs/StravaFE
+  Github front end: https://github.com/fionaochs/StravaFE
+  Github back end: https://github.com/fionaochs/StravaBE
 
 ## Features
   ### Get highest rated shoes
@@ -13,15 +14,15 @@
 ## Design a system for athletes to rate the running shoes they are using. Then, create the mechanism for strava to use those ratings to provide shoe recommendations to athletes
 
 ### 1. Write code for a method to store athlete's ratings for shoes.
-    ### Parameters:
+     Parameters:
       - shoeId: Integer representing the ID of the Shoe getting rated
       - athleteId: Integer representing the ID of the Athlete rating the Shoe
       - rating: Integer rating value - 1 through 5
 
 ### 2. Write code for a function that recommends shoes for a given athlete.
-    ### Parameters:
+    Parameters:
     - athleteId: an Integer representing the ID of the Athlete requesting a recommendation
-    ### Returns:
+    Returns:
     - an Integer representing the ID of the recommended shoe
     - recommended shoe object
 
@@ -32,11 +33,13 @@
 ## To run locally
   ```npm i ```
   ## To set up the database
-     Add DATABASE_URL in .env file
-     Add TEST_DB_URL in .env file
+    ### Add DATABASE_URL in .env file
 
   ### In StravaBE and StravaFE
   ```npm run start```
+
+## To run tests
+  ### Add TEST_DB_URL in .env file to set up test database
 
   ### In StravaBE and StravaFE
   ```npm run test```
