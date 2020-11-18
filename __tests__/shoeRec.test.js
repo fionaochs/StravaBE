@@ -21,4 +21,18 @@ describe('shoe recommendation routes', () => {
       terrain: "road"
     }]);
   });
+
+  it('shoe rec for athlete by id via GET does not match shoe they already rated', async() => {
+    let athlete_id = 2;
+    const response = await request(app)
+      .get(`/recathleteshoes/${athlete_id}`);
+
+    expect(response.body).not.toEqual([{
+      avg_stars: expect.any(Number), 
+      durable_miles: 350, 
+      id: 2, 
+      model: "Altra Lone Peak", 
+      terrain: "trail"
+    }]);
+  });
 });
