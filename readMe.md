@@ -33,12 +33,10 @@
   ```npm i ```
   ## To set up the database
     ### Add DATABASE_URL in .env file
+    ### Add TEST_DB_URL in .env file
 
   ### In StravaBE and StravaFE
   ```npm run start```
-
-## To run tests
-  ### Add TEST_DB_URL in .env file to set up test database
 
   ### In StravaBE and StravaFE
   ```npm run test```
